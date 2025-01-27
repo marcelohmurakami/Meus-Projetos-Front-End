@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankist!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="wel-phr">Welcome back, log in to movement NOW</h2>
+        <img class="logo" src="imagens/Design sem nome (1).png" alt="Logo do banco" height="50px" width="50px">
+        <div>
+            <input class="inp-log user" type="text" name="" required placeholder="user">
+            <input class="inp-log pin" type="text" name="" required placeholder="PIN">
+            <button class="btn-log">✔</button>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="sumario">
+            <div>
+                <h2 class="cur-bal">Current Balance</h2>
+                <p class="date-bal">As of xx/xx/xxxx</p>
+            </div>
+            <h1 class="main-bal">BALANCE</h1>
+        </div>
+
+        <div class="main-movs">
+            <div class="deposits">
+             
+            </div>
+
+            <div class="functions">
+                <div class="fun transfer">
+                    <h3>Transfer Money</h3>
+                    <div class="inpts">
+                        <div class="disp-inpt">
+                            <input class="transferInf acc" type="text" name="">
+                            <label for="">Transfer to</label>
+                        </div>
+
+                        <div class="disp-inpt">
+                            <input class="transferInf val" type="text" name="">
+                            <label for="">Amount</label>
+                        </div>
+
+                        <button class="btn-fun transfer">➔</button>
+                    </div>
+                </div>
+
+                <div class="fun loan">
+                    <h3>Request loan</h3>
+                    <div class="inpts">
+                        <div class="disp-inpt">
+                            <input class="transferInf loan" type="text" name="">
+                            <label for="">Amount</label>
+                        </div>
+
+                        <button class="btn-fun loan">➔</button>
+                    </div>
+                </div>
+
+                <div class="fun close">
+                    <h3>Close account</h3>
+                    <div class="inpts">
+                        <div class="disp-inpt">
+                            <input class="transferInf close" type="text" name="">
+                            <label for="">Confirm user</label>
+                        </div>
+
+                        <div class="disp-inpt">
+                            <input class="transferInf pin" type="text" name="">
+                            <label for="">Confirm PIN</label>
+                        </div>
+
+                        <button class="btn-fun close">➔</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="inf-movs">
+                <div class="mov">
+                    <p class="tit-val">In</p> <p class="valor dep">0.0</p>
+                </div>
+                <div class="mov">
+                    <p class="tit-val">Out</p> <p class="valor with">0.0</p>
+                </div>
+                <div class="mov">
+                    <p class="tit-val">Interest</p> <p class="valor interest">0.0</p>
+                </div>
+                
+
+                <button>🡫 sort</button>
+            </div>
+            
+            <p class="logout"></p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

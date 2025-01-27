@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #E5E4E2;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 3.5em;
+}
+
+.wel-phr {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inp-log {
+    background-color: white;
+    opacity: 80%;
+    border-radius: 1em;
+    width: 6.5em;
+    height: 2.15em;
+    border: none;
+    margin-right: .3em;
+    text-align: center;
+}
+
+.inp-log::placeholder {
+    text-align: center;
+}
+
+.btn-log {
+    border: none;
+    outline: none;
+    background-color: #E5E4E2;
+    cursor: pointer;
+    height: 2em;
+    width: 2em;
+}
+
+main {
+    margin: 6em auto 0 auto;
+    width: 80em;
+}
+
+.sumario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.cur-bal {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: .2em;
+}
+
+.date-bal {
+    font-size: 1.15em;
+    font-weight: 300;
+}
+
+.main-bal {
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.main-movs {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.deposits {
+    flex: 1.5;
+    background-color: white;
+    height: 38em;
+    overflow-y: scroll;
+    border-radius: .8em;
+}
+
+.deposit {
+    height: 15%;
+    border-bottom: .01em solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.dep-date {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+}
+
+.trans {
+    font-size: .9em;
+    font-weight: 600;
+    background-color: gray;
+    border-radius: 2em;
+    padding: .25em 1.2em;
+    color: white;
+}
+
+.trans.dep {
+    background-color: green;
+}
+
+.trans.wit {
+    background-color: red;
+}
+
+.value {
+    font-size: 1.3em;
+}
+
+.functions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    height: auto;
+    flex: 1;
+}
+
+.fun {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: gray;
+    border-radius: 1em;
+    padding: 2em;
+    align-items: self-start;
+    justify-content: center;
+    gap: 1.3em;
+}
+
+.fun.transfer{
+    background: linear-gradient(250deg, #cc5200, #ffcc80);
+}
+
+.fun.loan {
+    background: linear-gradient(250deg, #004d00, #66ff66);
+
+}
+
+.fun.close {
+    background: linear-gradient(250deg, #8b0000, #ff6666);
+}
+
+.inpts {
+    display: flex;
+    gap: .6em;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+}
+
+.inpts input {
+    border-radius: .5em;
+    height: 1.8em;
+    border: none;  
+    width: 100%;
+    opacity: 50%;
+}
+
+.disp-inpt {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: .5em;
+    align-items: center;
+}
+
+.btn-fun {
+    border-radius: .5em;
+    height: 1.8em;
+    width: 3.5em;
+    border: none;
+}
+
+.fun h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.fun label {
+    font-size: 1.1em;
+    letter-spacing: .06em;
+}
+
+.transferInf {
+    padding-left: .5em;
+    box-sizing: border-box;
+    color: black;
+    font-weight: 700;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.inf-movs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1.5;
+}
+
+.logout {
+    flex: 1;
+    text-align: end;
+}
+
+h3 {
+    display: inline;
+}
+
+.mov {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.tit-val {
+    font-size: 1em;
+}
+
+.valor {
+    font-size: 2em;
+}
+
+.valor.dep {
+    color: green;
+}
+
+.valor.with {
+    color: red;
+}
+
+.valor.interest {
+    color: blue;
+}
+
+.infos button {
+    background-color: #E5E4E2;
+    border: none;
+    text-transform: uppercase;
+}
+
+.main {
+    opacity: 0;
+    transition: all 1s ease;
+}
